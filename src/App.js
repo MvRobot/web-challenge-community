@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import nalgDonalds from './imgs/nalgonalds.jpg';
+//import './App.css';
+import React from 'react';
+import { Article } from './components/articles';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Article imgdir={nalgDonalds} imgname="SitioNalgon" title="Visitá NalgDonalds" btnTitle="A chingarle" btnAccion="document.location('http://google.com')"
+      descrip="NalgDonalds esta celebrando su primer ano de servicio con todos esos gordos que les importa mas su hambre que sus ganas de vivir, gordo"
+      />
+    </React.Fragment>
   );
 }
 
